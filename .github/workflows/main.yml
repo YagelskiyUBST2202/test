@@ -52,7 +52,7 @@ jobs:
           dockerfile: ./Dockerfile
           push: true
           tags: |
-            antonZavr/test:${{ steps.git_version.outputs.version }}
-            antonZavr/test:latest
-          cache-from: type=ghcr,name=ghcr.io/antonZavr/test:cache  # Тег 'cache' уже есть
-          cache-to: type=ghcr,name=ghcr.io/antonZavr/test:cache,mode=max    # Тег 'cache' уже есть
+            antonzavr/test:${{ steps.git_version.outputs.version }}
+            antonzavr/test:latest
+          cache-from: type=ghcr,name=ghcr.io/antonzavr/test:cache  # Тег 'cache' уже есть
+          cache-to: type=ghcr,name=ghcr.io/antonzavr/test:cache,mode=max    # Тег 'cache' уже есть
