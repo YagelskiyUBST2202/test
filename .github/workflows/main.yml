@@ -53,7 +53,7 @@ jobs:
           dockerfile: ./Dockerfile
           push: true
           tags: |
-            antonozavr/testrepo:${{ steps.git_version.outputs.version }}
-            antonozavr/testrepo:latest
-          cache-from: type=ghcr,name=ghcr.io/antonozavr/testrepo:cache
-          cache-to: type=ghcr,name=ghcr.io/antonozavr/testrepo:cache,mode=max
+            antonzavr/testrepo:${{ steps.git_version.outputs.version }}
+            antonzavr/testrepo:latest
+          cache-from: type=ghcr,name=ghcr.io/antonzavr/testrepo:cache  # Тег 'cache' уже есть
+          cache-to: type=ghcr,name=ghcr.io/antonzavr/testrepo:cache,mode=max    # Тег 'cache' уже есть
