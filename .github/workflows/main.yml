@@ -58,6 +58,6 @@ jobs:
           push: true
           tags: |
             antonozavr/testrepo:${{ steps.git_version.outputs.version }}
-            antonozavr/testrepo:latest # Опционально, если нужен latest
+            antonozavr/testrepo:latest
           cache-from: type=dockerhub,name=antonozavr/testrepo:cache
           cache-to: type=dockerhub,name=antonozavr/testrepo:cache,mode=max
